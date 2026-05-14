@@ -1,0 +1,973 @@
+type: spec.insomnia.rest/5.0
+schema_version: "5.1"
+name: RoyalGames
+meta:
+  id: wrk_42eab4b9eb9f4ea58c862f9091f88a93
+  created: 1772458065564
+  modified: 1772458065564
+  description: ""
+collection:
+  - name: Autenticação
+    meta:
+      id: fld_41d999ea25bf417284a695fbd66b4390
+      created: 1771587766419
+      modified: 1772458274725
+      sortKey: -1770904221555
+      description: ""
+    children:
+      - url: https://localhost:7102/api/Autenticacao/login
+        name: Login
+        meta:
+          id: req_185b3a7b866d415a995d889811a24190
+          created: 1771587796971
+          modified: 1772625162638
+          isPrivate: false
+          description: ""
+          sortKey: -1771587796971
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "admin@admin.com",
+            	"senha": "123"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Jogo
+    meta:
+      id: fld_50853b203d7a4cc68ac42225a074fb12
+      created: 1771587849005
+      modified: 1772546272841
+      sortKey: -1770904221480
+      description: ""
+    children:
+      - url: https://localhost:7102/api/Jogo
+        name: Adicionar Jogo
+        meta:
+          id: req_0fa92ba93e904f9f8844817b0110df6f
+          created: 1771588711116
+          modified: 1772623908967
+          isPrivate: false
+          description: ""
+          sortKey: -1771589292145
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: Nome
+              value: Cyberpunk 2077
+            - name: Preco
+              value: "199.9"
+              description: ""
+              disabled: false
+            - name: Descricao
+              value: Um RPG de ação de mundo aberto ambientado na megalópole de Night City.
+              description: ""
+              disabled: false
+            - name: Imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\46581849820\Downloads\Cyberpunk.jpg
+              type: file
+            - name: GeneroIds
+              value: "1"
+              description: ""
+              disabled: false
+              multiline: false
+              type: text
+            - name: GeneroIds
+              value: "3"
+              description: ""
+              disabled: false
+            - name: PlataformaIds
+              value: "1"
+              description: ""
+              disabled: false
+            - name: PlataformaIds
+              value: "2"
+              description: ""
+              disabled: false
+            - name: PlataformaIds
+              value: "3"
+              description: ""
+              disabled: false
+            - name: ClassificacaoID
+              value: "6"
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWRtaW4iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbkBhZG1pbi5jb20iLCJleHAiOjE3NzI2MjQ5NDMsImlzcyI6IlJveWFsR2FtZXNBcGkiLCJhdWQiOiJSb3lhbEdhbWVzRnJvbnQifQ.GddzHltR_gAS0D6C7dfvVapb_dGpv5B1MNtlBHSU_bg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Jogo
+        name: Listar Jogos
+        meta:
+          id: req_e2a5a46eb8af40a88b8a2c60679eb5de
+          created: 1771588723446
+          modified: 1772546503762
+          isPrivate: false
+          description: ""
+          sortKey: -1771589292195
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWRtaW4iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbkBhZG1pbi5jb20iLCJleHAiOjE3NzI1NDc1NTMsImlzcyI6IlJveWFsR2FtZXNBcGkiLCJhdWQiOiJSb3lhbEdhbWVzRnJvbnQifQ.R7yqpGdHk6q2s_mNeD0amfQo05gcQm9r8h6Re-eu5Zc
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api
+        name: Listar Imagens Jogos
+        meta:
+          id: req_85cc5fa0ddde498195da2b4e4573d20a
+          created: 1771589292095
+          modified: 1772623661802
+          isPrivate: false
+          description: ""
+          sortKey: -1771589292157.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Jogo/1
+        name: Listar Jogo (ID)
+        meta:
+          id: req_408cf97cc8dd4515a2e7155467ade929
+          created: 1771931492860
+          modified: 1772546427405
+          isPrivate: false
+          description: ""
+          sortKey: -1771589292170
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Jogo/1
+        name: Apagar Jogo
+        meta:
+          id: req_5b5fad14b6b3446b9a81d560400f4812
+          created: 1771931515565
+          modified: 1772546536473
+          isPrivate: false
+          description: ""
+          sortKey: -1771589292113.75
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Jogo/4
+        name: Atualizar Jogo
+        meta:
+          id: req_08277c8c4c0042a6bdf74fae42001abb
+          created: 1772624145071
+          modified: 1772625553246
+          isPrivate: false
+          description: ""
+          sortKey: -1771589292132.5
+        method: PUT
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: Nome
+              value: Cyberpunk 2077
+            - name: Preco
+              value: "199.9"
+              description: ""
+              disabled: false
+            - name: Descricao
+              value: Um RPG de ação de mundo aberto ambientado na megalópole de Night City.
+              description: ""
+              disabled: false
+            - name: Imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\46581849820\Downloads\Cyberpunk.jpg
+              type: file
+            - name: GeneroIds
+              value: "1"
+              description: ""
+              disabled: false
+              multiline: false
+              type: text
+            - name: GeneroIds
+              value: "3"
+              description: ""
+              disabled: false
+            - name: PlataformaIds
+              value: "1"
+              description: ""
+              disabled: false
+            - name: PlataformaIds
+              value: "2"
+              description: ""
+              disabled: false
+            - name: PlataformaIds
+              value: "3"
+              description: ""
+              disabled: false
+            - name: ClassificacaoID
+              value: "6"
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWRtaW4iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbkBhZG1pbi5jb20iLCJleHAiOjE3NzI2MjcwNzcsImlzcyI6IlJveWFsR2FtZXNBcGkiLCJhdWQiOiJSb3lhbEdhbWVzRnJvbnQifQ.RJhYnGDZUo8vOexXDeTmvScxa4_TfdGZYy3eTaOtVjQ
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Usuário
+    meta:
+      id: fld_55c8245a8a8b4f03bbed528fea3df74e
+      created: 1771588767100
+      modified: 1772458276667
+      sortKey: -1770904221505
+      description: ""
+    children:
+      - url: https://localhost:7102/api/Usuario
+        name: Listar Usuários
+        meta:
+          id: req_b8f323e6d7934826946df9601997234a
+          created: 1770904011344
+          modified: 1772546030940
+          isPrivate: false
+          description: ""
+          sortKey: -1771588811676
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Usuario/1
+        name: Apagar Usuário
+        meta:
+          id: req_97e95fba3bde4ab5a3aaeda751a5f459
+          created: 1770904359406
+          modified: 1772546260816
+          isPrivate: false
+          description: ""
+          sortKey: -1771588811476
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Usuario
+        name: Adicionar Usuário
+        meta:
+          id: req_2cfea633d23741888ef45027939c2ffd
+          created: 1770904466041
+          modified: 1772545784028
+          isPrivate: false
+          description: ""
+          sortKey: -1771588811576
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Gui",
+            	"email": "gui@admin.com",
+            	"senha": "123"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWRtaW4iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbkBhZG1pbi5jb20iLCJleHAiOjE3NzI1NDc1NTMsImlzcyI6IlJveWFsR2FtZXNBcGkiLCJhdWQiOiJSb3lhbEdhbWVzRnJvbnQifQ.R7yqpGdHk6q2s_mNeD0amfQo05gcQm9r8h6Re-eu5Zc
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Usuario/1
+        name: Listar Usuário (ID)
+        meta:
+          id: req_b588dc3b2a6d4bdb9a8430ff7135af5f
+          created: 1771931579502
+          modified: 1772546206667
+          isPrivate: false
+          description: ""
+          sortKey: -1771588811626
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Usuario/1
+        name: Atualizar Usuário
+        meta:
+          id: req_3f96da9dd3c042009954b100baa5bf23
+          created: 1771931593412
+          modified: 1772625288652
+          isPrivate: false
+          description: ""
+          sortKey: -1771588811526
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Rafa",
+            	"email": "rafa@admin.com",
+            	"senha": "123"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWRtaW4iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbkBhZG1pbi5jb20iLCJleHAiOjE3NzI2MjcwNzcsImlzcyI6IlJveWFsR2FtZXNBcGkiLCJhdWQiOiJSb3lhbEdhbWVzRnJvbnQifQ.RJhYnGDZUo8vOexXDeTmvScxa4_TfdGZYy3eTaOtVjQ
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Usuario/email/gui@admin.com
+        name: Listar Email Usuários
+        meta:
+          id: req_669da40512194c79af5de3ec5268b16f
+          created: 1771931626735
+          modified: 1772546247375
+          isPrivate: false
+          description: ""
+          sortKey: -1771588811601
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Genero
+    meta:
+      id: fld_4e85527ddea3401088cb749c087c2e2a
+      created: 1771931189854
+      modified: 1772546498436
+      sortKey: -1770904221467.5
+      description: ""
+    children:
+      - url: https://localhost:7102/api/Genero
+        name: Listar Generos
+        meta:
+          id: req_8b23996ada214cd490e1706b8d742b72
+          created: 1771931249921
+          modified: 1772629926845
+          isPrivate: false
+          description: ""
+          sortKey: -1771931249921
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Genero
+        name: Adicionar Genero
+        meta:
+          id: req_1999759d139e4666af181f153925b278
+          created: 1771931318120
+          modified: 1772624247354
+          isPrivate: false
+          description: ""
+          sortKey: -1771920563738.9375
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Ação"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Genero/2
+        name: Listar Genero (ID)
+        meta:
+          id: req_dca41ebdf6304c1ea92521a746ae5b30
+          created: 1771931348108
+          modified: 1772629931810
+          isPrivate: false
+          description: ""
+          sortKey: -1771925906829.9688
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiR3VpbGhlcm1lIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiZ3VpbGhlcm1lQGd1aWxoZXJtZS5jb20iLCJleHAiOjE3NzE5NDIwOTYsImlzcyI6IlZIQnVyZ3VlckFwaSIsImF1ZCI6IlZIQnVyZ3VlckZyb250In0.NwMeTHyJxoUxzmRCy4Jfp6W3FlCXIn9dYs67jgpeLsI
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Genero/1
+        name: Apagar Genero
+        meta:
+          id: req_d1d8fa04415f445ca521ce5ef0b48467
+          created: 1771931367177
+          modified: 1772546831108
+          isPrivate: false
+          description: ""
+          sortKey: -1771915220647.9062
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiR3VpbGhlcm1lIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiZ3VpbGhlcm1lQGd1aWxoZXJtZS5jb20iLCJleHAiOjE3NzE5NDI3MTQsImlzcyI6IlZIQnVyZ3VlckFwaSIsImF1ZCI6IlZIQnVyZ3VlckZyb250In0.UzV6DDX_AANZcen5Unij3SGJvG-KOPAUbvLA1l95Ea4
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Genero/1
+        name: Atualizar Genero
+        meta:
+          id: req_206c3c40cd9b4367a189097d5d0876d2
+          created: 1771931387727
+          modified: 1772625620009
+          isPrivate: false
+          description: ""
+          sortKey: -1771917892193.4219
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Ação"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWRtaW4iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbkBhZG1pbi5jb20iLCJleHAiOjE3NzI2MjczNzMsImlzcyI6IlJveWFsR2FtZXNBcGkiLCJhdWQiOiJSb3lhbEdhbWVzRnJvbnQifQ.ofB7eP6d-q8ca4JIJhcnSpr8s-eTaTgUSAt5l-o2_14
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: LogJogo
+    meta:
+      id: fld_e60b8e6553144cc5a9322d436717f9e8
+      created: 1771933531838
+      modified: 1772621809130
+      sortKey: -1770904221458.125
+      description: ""
+    children:
+      - url: https://localhost:7102/api/LogJogo
+        name: Listar LogJogo
+        meta:
+          id: req_6e23aee6dc4b4818bfd8a3a119ccf3bf
+          created: 1772025223236
+          modified: 1772623661802
+          isPrivate: false
+          description: ""
+          sortKey: -1772025223236
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/LogJogo/1
+        name: Listar LogJogo (ID)
+        meta:
+          id: req_ed99c90994644275b27febe7127f13b4
+          created: 1772025280173
+          modified: 1772623661802
+          isPrivate: false
+          description: ""
+          sortKey: -1772025223136
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Plataforma
+    meta:
+      id: fld_ad514ef241124859aa5a76cd539609f3
+      created: 1772623105882
+      modified: 1772623661802
+      sortKey: -1770904221473.75
+      description: ""
+    children:
+      - url: https://localhost:7102/api/Plataforma/1
+        name: Apagar Plataforma
+        meta:
+          id: req_8f1f24f75e084e81a4a2ba000907cdbb
+          created: 1772623137232
+          modified: 1772623661802
+          isPrivate: false
+          description: ""
+          sortKey: -1772623137232
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Plataforma/1
+        name: Atualizar Plataforma
+        meta:
+          id: req_29da34acfe2647698699de661e302dfc
+          created: 1772623144013
+          modified: 1772625593885
+          isPrivate: false
+          description: ""
+          sortKey: -1772623144013
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "PC"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWRtaW4iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbkBhZG1pbi5jb20iLCJleHAiOjE3NzI2MjczNzMsImlzcyI6IlJveWFsR2FtZXNBcGkiLCJhdWQiOiJSb3lhbEdhbWVzRnJvbnQifQ.ofB7eP6d-q8ca4JIJhcnSpr8s-eTaTgUSAt5l-o2_14
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Plataforma
+        name: Adicionar Plataforma
+        meta:
+          id: req_9dd7378e08474b3cbb823fe86392d82f
+          created: 1772623147949
+          modified: 1772624096846
+          isPrivate: false
+          description: ""
+          sortKey: -1772623147949
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "PC"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Plataforma/1
+        name: Listar Plataforma (ID)
+        meta:
+          id: req_b831504d8655430fbae14811d6dc2b07
+          created: 1772623150629
+          modified: 1772623661802
+          isPrivate: false
+          description: ""
+          sortKey: -1772623150629
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Plataforma
+        name: Listar Plataformas
+        meta:
+          id: req_bd03b58136be4158b6bb7e9742b46834
+          created: 1772623152670
+          modified: 1772623661802
+          isPrivate: false
+          description: ""
+          sortKey: -1772623152670
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Classificacao
+    meta:
+      id: fld_bf9f2105cc9c44e588c2aec7ca3bde83
+      created: 1772623530270
+      modified: 1772623661802
+      sortKey: -1770904221470.625
+      description: ""
+    children:
+      - url: https://localhost:7102/api/Classificacao/1
+        name: Apagar Classificacao
+        meta:
+          id: req_e0fae8f5eaa74ddc900399d5c58caac0
+          created: 1772623530273
+          modified: 1772623661802
+          isPrivate: false
+          description: ""
+          sortKey: -1772623137232
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Classificacao/1
+        name: Atualizar Classificacao
+        meta:
+          id: req_5510e96010944cd2b1deaa1733aadfef
+          created: 1772623530276
+          modified: 1772623661802
+          isPrivate: false
+          description: ""
+          sortKey: -1772623144013
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Classificacao
+        name: Adicionar Classificacao
+        meta:
+          id: req_07c0b97756ba438fb4db881a93d6f5b4
+          created: 1772623530279
+          modified: 1772624096846
+          isPrivate: false
+          description: ""
+          sortKey: -1772623147949
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "+18"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Classificacao/1
+        name: Listar Classificacao (ID)
+        meta:
+          id: req_5f6bff53c1a3472aaa17dd3fbcd411ea
+          created: 1772623530280
+          modified: 1772623661802
+          isPrivate: false
+          description: ""
+          sortKey: -1772623150629
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7102/api/Classificacao
+        name: Listar Classificacao
+        meta:
+          id: req_9b901d24e3f04b1ca806ea3d2d62c5a9
+          created: 1772623530283
+          modified: 1772623661802
+          isPrivate: false
+          description: ""
+          sortKey: -1772623152670
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_7c3f120f739a56b3163073fa1736707895a1df7c
+    created: 1772458065580
+    modified: 1772458065580
+environments:
+  name: Base Environment
+  meta:
+    id: env_7c3f120f739a56b3163073fa1736707895a1df7c
+    created: 1772458065577
+    modified: 1772458065577
+    isPrivate: false
+spec:
+  meta:
+    id: spc_de97ce3192ce4ffa8db5697d1eaf5c47
+    created: 1772458065575
+    modified: 1772458477992
