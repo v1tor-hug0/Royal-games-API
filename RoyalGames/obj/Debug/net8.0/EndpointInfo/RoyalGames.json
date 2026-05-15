@@ -1144,6 +1144,10 @@
             "type": "boolean",
             "nullable": true
           },
+          "imagemUrl": {
+            "type": "string",
+            "nullable": true
+          },
           "generoIds": {
             "type": "array",
             "items": {

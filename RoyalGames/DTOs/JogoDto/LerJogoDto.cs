@@ -7,6 +7,7 @@
         public decimal Preco { get; set; }
         public string Descricao { get; set; } = null!;
         public bool? StatusJogo { get; set; }
+        public string ImagemUrl { get; set; }
 
         // generos
         public List<int> GeneroIds { get; set; } = new();

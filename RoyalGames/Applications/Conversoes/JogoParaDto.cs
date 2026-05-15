@@ -14,6 +14,7 @@ namespace RoyalGames.Applications.Conversoes
                 Preco = jogo.Preco,
                 Descricao = jogo.Descricao,
                 StatusJogo = jogo.StatusJogo,
+                ImagemUrl = $"Jogo/{jogo.JogoID}/imagem",
 
                 GeneroIds = jogo.Genero.Select(genero => genero.GeneroID).ToList(),
 
