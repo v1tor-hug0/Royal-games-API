@@ -539,6 +539,10 @@
                       "format": "int32"
                     }
                   },
+                  "ClassificacaoID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
                   "statusJogo": {
                     "type": "boolean"
                   }
@@ -561,6 +565,9 @@
                   "style": "form"
                 },
                 "PlataformaIds": {
+                  "style": "form"
+                },
+                "ClassificacaoID": {
                   "style": "form"
                 },
                 "statusJogo": {

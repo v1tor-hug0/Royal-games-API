@@ -125,6 +125,8 @@ namespace RoyalGames.Applications.Services
                 throw new DomainException("Jogo deve ter amo menos um gênero.");
             }
 
+            
+
             if (jogoDto.PlataformaIds == null || jogoDto.PlataformaIds.Count() == 0)
             {
                 throw new DomainException("Jogo deve ter amo menos uma plataforma.");
@@ -138,6 +140,8 @@ namespace RoyalGames.Applications.Services
             jogoBanco.Nome = jogoDto.Nome;
             jogoBanco.Preco = jogoDto.Preco;
             jogoBanco.Descricao = jogoDto.Descricao;
+            jogoBanco.ClassificacaoIndicativaID = jogoDto.ClassificacaoID;
+            
 
             if (jogoDto.Imagem != null && jogoDto.Imagem.Length > 0)
             {
@@ -148,6 +152,8 @@ namespace RoyalGames.Applications.Services
             {
                 jogoBanco.StatusJogo = jogoDto.statusJogo.Value;
             }
+
+
 
             _repository.Atualizar(jogoBanco, jogoDto.GeneroIds, jogoDto.PlataformaIds);
 
