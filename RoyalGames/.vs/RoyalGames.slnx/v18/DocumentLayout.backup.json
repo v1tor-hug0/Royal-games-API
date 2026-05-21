@@ -75,8 +75,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T13:29:51.884Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -90,7 +89,7 @@
               "RelativeDocumentMoniker": "Controllers\\JogoController.cs",
               "ToolTip": "C:\\Users\\43159446883\\Desktop\\Royal-games\\RoyalGames\\RoyalGames\\Controllers\\JogoController.cs",
               "RelativeToolTip": "Controllers\\JogoController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T13:34:59.446Z",
               "EditorCaption": ""
@@ -105,8 +104,7 @@
               "RelativeToolTip": "Applications\\Services\\JogoService.cs",
               "ViewState": "AgIAAGsAAAAAAAAAAAAuwI4AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T13:30:53.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T13:30:53.789Z"
             },
             {
               "$type": "Document",
@@ -118,8 +116,7 @@
               "RelativeToolTip": "DTOs\\JogoDto\\CriarJogoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T13:27:59.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T13:27:59.159Z"
             },
             {
               "$type": "Document",
@@ -155,8 +152,7 @@
               "RelativeToolTip": "DTOs\\JogoDto\\LerJogoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T11:07:39.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T11:07:39.472Z"
             },
             {
               "$type": "Document",
